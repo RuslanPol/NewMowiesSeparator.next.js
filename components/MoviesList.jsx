@@ -5,9 +5,9 @@ import { useState } from 'react'
 
 export default function MoviesList({ movies: propsMovies }) {
   const [stateMoviesTitles, setMovies] = useState([]);
-  console.log(stateMoviesTitles);
+  console.log('propsMovies',propsMovies);
   return (<div className="list">
-    {  propsMovies.map((movie,k) => <MovieCard movie={movie} key={k}/>)} 
+    {  propsMovies.Search.map((movie,k) => <MovieCard movie={movie} key={k}/>)} 
    
     { stateMoviesTitles.map(Poster => <FetchMovie Poster={Poster} key={imdbID} />)}
     console.log(stateMoviesTitles);
